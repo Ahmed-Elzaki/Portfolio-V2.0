@@ -1,8 +1,3 @@
-// Initialize EmailJS
-(function(){
-   emailjs.init("wdu6udTZ4OIVrOcRE");
-})();
-
 function sendEmail() {
    var name = document.getElementById("name").value;
    var email = document.getElementById("email").value;
