@@ -9,8 +9,7 @@ function sendEmail() {
    var phone = document.getElementById("phone").value;
    var message = document.getElementById("message").value;
    
-   console.log(name);  // Log name inside the function after user input just for debugging
-   button.value="sending..";
+   //console.log(name);  // Log name inside the function after user input just for debugging
    emailjs.send( serviceID,templateID,{
       from_name: name,
       from_email: email,
