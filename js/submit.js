@@ -1,3 +1,8 @@
+const serviceID = 'default_service';
+const templateID = 'template_uqq5uck';
+let button=document.getElementById("btnsub");
+
+
 function sendEmail() {
    var name = document.getElementById("name").value;
    var email = document.getElementById("email").value;
@@ -5,8 +10,8 @@ function sendEmail() {
    var message = document.getElementById("message").value;
    
    console.log(name);  // Log name inside the function after user input just for debugging
-
-   emailjs.send("service_k5fnrsv","template_uqq5uck",{
+   button.value="sending..";
+   emailjs.send( serviceID,templateID,{
       from_name: name,
       from_email: email,
       phone: phone,
